@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
-app.get( '/', (res, req) => {
-    res.send('Bienvenido a DonjorTech')
-});
-app.listen(3000, () => {
-    console.log('Servidor iniciado...')
-})
+app.use(express.json());
+app.use(cors());
+app.use('/api/productos', productsRoutes);
+app.use('/api/usuarios', usersRoutes);
+app.use('/api/comisiones', commissionRoutes);
+app.use('/api/ordenes'), ordersRoutes;
+app.use('/api/tiendas', storeRoutes);
+app.use('/api/login'), authRoutes;
