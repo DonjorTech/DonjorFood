@@ -1,5 +1,8 @@
-const { router } = require('../../app');
+import { Router } from "express";
+const router = Router();
 router.post('/', (req, res) => {
     res.json({ message: 'Login exitoso' });
 });
-module.exports = router;
+export { router as authRoutes };
+
+

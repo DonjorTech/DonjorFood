@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 const jwt = require('jsonwebtoken');
-exports.login = async (data) => {
+export const login = async (data) => {
     const {email, password} = data;
     const user = await findUserByEmail(email);
     if (!user) {

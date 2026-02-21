@@ -1,10 +1,9 @@
-import productsServices from './products.service.js';
-exports.getAllProducts = async (res, req) => {
+import {productsService} from './products.service.js';
+export  const getAllProducts = async (req, res) => {
     try {
-        const products = await productsServices.geatALL();
+        const products = await productsService.getAll();
             res.json(products);
-    } catch {
+    } catch (error) {
         res.status(500).json({message: 'Error al cargar productos   '})
     }
 };
-exports.Delete = async ()
