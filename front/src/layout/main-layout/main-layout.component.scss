@@ -1,0 +1,27 @@
+.app-container {
+    display: flex;
+    padding-top: 100px;
+    height: 100vh;  
+}
+.main-area {
+    border: black solid 1px;
+    padding-left: 250px;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+.sidebar {  
+    border: black solid 1px;
+    left: 0;
+    top: 0;
+    width: 250px;
+}
+
+.content {
+    border: black solid 1px;
+    flex: 1; 
+   
+}

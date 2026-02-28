@@ -1,0 +1,45 @@
+<div class="formProducts">
+    <div class="tableProducts">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of products">
+                    <td>{{ p.nombre_producto }}</td>
+                    <td>${{ p.precio}}</td>
+                    <td>{{ p.stock }}</td>
+                    <td>{{ getStatus(p.estado) }}</td>
+                </tr>       
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- <div class="card">
+            <div class="flex justify-center mb-4">
+                <p-table [value]="products" styleClass="custom-table">
+                    <ng-template pTemplate="header">
+                        <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Estado</th>
+                        </tr>
+                    </ng-template>
+
+                    <ng-template pTemplate="body" let-p>
+                        <tr>
+                        <td>{{ p.name }}</td>
+                        <td>{{ p.price }}</td>
+                        <td>{{ p.stock }}</td>
+                        <td>{{ getStatus(p.status) }}</td>
+                        </tr>
+                    </ng-template>
+                    </p-table>
+        </div> -->
