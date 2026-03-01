@@ -1,7 +1,7 @@
-import os;
-import mysql.connector;
 from flask_sqlalchemy import SQLAlchemy;
-from dotenv import load_dotenv;
+from flask_bcrypt import Bcrypt
 db = SQLAlchemy()
-load_dotenv()
+bcrypt = Bcrypt()
+
+
 
