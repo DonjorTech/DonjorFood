@@ -2,18 +2,26 @@
     <div class="tableProducts">
         <table class="table">
             <thead>
-                <tr>
+                <tr class="table-header">
+                    <th>ID Producto</th>
+                    <th>ID Tienda</th>
+                    <th>ID Categoria</th>
                     <th>Producto</th>
                     <th>Precio</th>
                     <th>Stock</th>
+                    <th>Descripción</th>
                     <th>Estado</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-body">
                 <tr *ngFor="let p of products">
+                    <td>{{ p.id_producto }}</td>
+                    <td>{{ p.id_tienda }}</td>
+                    <td>{{ p.id_categoria }}</td>
                     <td>{{ p.nombre_producto }}</td>
                     <td>${{ p.precio}}</td>
                     <td>{{ p.stock }}</td>
+                    <td>{{ p.descripcion }}</td>
                     <td>{{ getStatus(p.estado) }}</td>
                 </tr>       
             </tbody>

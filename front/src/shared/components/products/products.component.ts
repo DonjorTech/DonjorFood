@@ -3,9 +3,13 @@ import { ProductsService } from '../../../app/services/products/products.service
 
 import { CommonModule } from '@angular/common';
 interface Product {
+  id_producto: number;
+  id_tienda: number;
+  id_categoria: number;
   nombre_producto: string;
   precio: number;
   stock: number;
+  descripcion: string;
   estado: boolean;
 }
 

@@ -4,12 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 
 @Component({
-  selector: 'app-main-layout',
+  selector: 'admin-main',
   standalone: true,
   imports: [SidebarComponent, RouterOutlet, HeaderComponent],
-  templateUrl: './main-layout.component.html',
-  styleUrl: './main-layout.component.scss'
+  templateUrl: './admin-main.component.html',
+  styleUrl: './admin-main.component.scss'
 })
-export class MainLayoutComponent {
+export class AdminMainComponent {
 
 }

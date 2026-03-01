@@ -1,7 +1,18 @@
+.table-header {
+    background-color: #b5b3b3;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.table-body {
+    background-color: rgb(72, 155, 244);
+}
+
 .table {
     width: 100%;
     border-collapse: separate;
-    border: 1px solid #ddd;
+    border: 1px black solid;
+    border-radius: 5px; 
     padding: 10px;
     text-align: left;
 }
